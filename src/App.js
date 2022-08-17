@@ -2,27 +2,27 @@ import "./App.css";
 import React from "react";
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
-import NavigationItems from "./components/NavigationItems";
-import Navigation from "./components/Navigation";
+import NavigationItems from "./components/Navigation/NavigationItems";
+import Navigation from "./components/Navigation/Navigation";
 import Categories from "./components/Categories";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import data from "./data";
-import BannerItems from "./components/BannerItems";
-import HomeBannersItems from "./components/HomeBannersItems";
-import ManagePageContent from "./components/ManagePageContent";
-import PageContentItems from "./components/PageContentItems";
+import BannerItems from "./components/Banners/BannerItems";
+import HomeBannersItems from "./components/Banners/HomeBannersItems";
+import ManagePageContent from "./components/Web Pages/ManagePageContent";
+import PageContentItems from "./components/Web Pages/PageContentItems";
 import Reviews from "./components/Reviews";
 import AddCategory from "./components/AddCategory";
-import AddNavigation from "./components/AddNavigation";
-import Banners from "./components/Banners";
-import HomePageBanners from "./components/HomePageBanners";
-import NewHomeBanner from "./components/NewHomeBanner";
-import UploadBanner from "./components/UploadBanner";
+import AddNavigation from "./components/Navigation/AddNavigation";
+import Banners from "./components/Banners/Banners";
+import HomePageBanners from "./components/Banners/HomePageBanners";
+import NewHomeBanner from "./components/Banners/NewHomeBanner";
+import UploadBanner from "./components/Banners/UploadBanner";
 import ReviewsItems from "./components/ReviewsItems";
-import Blogs from "./components/Blog";
-import BlogItems from "./components/BlogItems";
-import BlogsComments from "./components/BlogComments";
-import BlogCommentsItems from "./components/BlogCommentsItems";
+import Blogs from "./components/Blogs/Blog";
+import BlogItems from "./components/Blogs/BlogItems";
+import BlogsComments from "./components/Blogs/BlogComments";
+import BlogCommentsItems from "./components/Blogs/BlogCommentsItems";
 import Email from "./components/Email";
 import AddEmailTemplate from "./components/AddEmailTemplate";
 import Customers from "./components/Customers";
@@ -31,7 +31,7 @@ import ResetPassword from "./components/ResetPassword";
 import SendMessage from "./components/SendMessage";
 import ChangePassword from "./components/ChangePassword";
 import CustomersProfile from "./components/CustomersProfile";
-import AddPage from "./components/AddPage";
+import AddPage from "./components/Web Pages/AddPage";
 
 function App() {
   const NavigationElements = data.map((items) => {
@@ -199,19 +199,19 @@ function App() {
               {NavigationElements} */}
               {/* <Banners />
               {BannersElements} */}
-              {/* <HomePageBanners/>
-                  {HomeBannersElements} */}
-              <NewHomeBanner/>
+              {/* <HomePageBanners />
+              {HomeBannersElements} */}
+              {/* <NewHomeBanner/> */}
               {/* <ManagePageContent/>
                   {PageContentElements} */}
-                  {/* <ews/> */}
+              {/* <ews/> */}
               {/* {ReviAddPage/> */}
               {/* <ReviewCardsElements}
               {ReviewsElements} */}
               {/* <Blogs />
               {BlogElements} */}
-              {/* <BlogsComments />
-              {BlogCommentsElements} */}
+              <BlogsComments />
+              {BlogCommentsElements}
               {/* {EmailElements} */}
               {/* <Email/> */}
               {/* <AddEmailTemplate/> */}
